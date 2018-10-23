@@ -71,6 +71,7 @@
       {% resource g.main_css[6:] %}
     {% endblock %}
 
+
     {% block head_extras %}
       {# defined in the config.ini under "ckan.template_head_end" #}
       {{ g.template_head_end | safe }}
@@ -83,6 +84,7 @@
       </style>
       {%- endif %}
     {% endblock %}
+    <link rel="stylesheet" href="/arde.css" />
   </head>
 
   {# Allows custom attributes to be added to the <body> tag #}
